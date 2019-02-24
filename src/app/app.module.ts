@@ -13,6 +13,9 @@ import { GameControlComponent } from './playground/game-control/game-control.com
 import { OddComponent } from './playground/odd/odd.component';
 import { EvenComponent } from './playground/even/even.component';
 import { DropdownDirective } from './shared/dropdown.directive';
+import { AppRouteModule } from './app-route/app-route.module';
+import { RecipeSelectionComponent } from './recipes/recipe-selection/recipe-selection.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +30,13 @@ import { DropdownDirective } from './shared/dropdown.directive';
     GameControlComponent,
     OddComponent,
     EvenComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeSelectionComponent,
+    RecipeEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
